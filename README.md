@@ -1,20 +1,20 @@
-# Project XYZ
+# Online Retail Transaction Dataset Project
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Online Retail Transaction Dataset Project** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* 
 
 
 ## Business Requirements
-* Describe your business requirements
+* Analyse online retail transaction data to uncover sales patterns and trends, identify popular products and to understand customer behaviour to support targeted marketing and sales strategies.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* 
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
