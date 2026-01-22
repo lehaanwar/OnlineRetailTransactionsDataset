@@ -14,7 +14,10 @@
 
 
 ## Hypothesis and how to validate?
-* 
+* Seasonal products have higher unit prices due to demand spikes during specific times of the year.
+Certain countries have higher total transaction values due to larger customer bases or higher purchasing power.
+Lower priced products may encourage higher quantities purchased.
+
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
