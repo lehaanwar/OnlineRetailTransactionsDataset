@@ -6,88 +6,84 @@
 
 
 ## Dataset Content
-* 
+* The dataset I used was from one of the five that was provided to us, Online Retail Transaction Analysis, please see the link below;
+https://www.kaggle.com/datasets/abhishekrp1517/online-retail-transactions-dataset. 
+The dataset included;
+
+InvoiceNo - TransactionID
+StockCode - Product ID
+Description	- Name of products
+Quantity - Number of units purchased
+InvoiceDate - Day, month and year of purchase
+UnitPrice - Price per unit
+CustomerID - Unique customer identifier
+Country - location of customer
+
 
 
 ## Business Requirements
 * Analyse online retail transaction data to uncover sales patterns and trends, identify popular products and to understand customer behaviour to support targeted marketing and sales strategies.
 
 
-## Hypothesis and how to validate?
-* Seasonal products have higher unit prices due to demand spikes during specific times of the year.
-Certain countries have higher total transaction values due to larger customer bases or higher purchasing power.
-Lower priced products may encourage higher quantities purchased.
+## Hypotheses and how to validate?
+1. Location vs Customer behaviour - Certain countries have higher total transaction values due to larger customer bases or higher purchasing power. Validation - I need to compare total sales and check the difference between different countries. The variables used - Country, CustomerID, Quantity, Unit Price.
+2. Seasonal vs Sales - Products that have higher unit prices due to demand spikes during specific times of the year. Validation -  I need to compare seasonal months in the year (November, December) against the non-seasonal months (January, February) to check what months demand is higher. I will use Time Series to analyse alongside line plots and bar charts. The variables used - InvoiceDate, Quantity, Unit Price.
+3. Price vs Quantity. Lower priced products will encourage higher quantities purchased. Validation - I need to compare the Unit Price and quantity and see if there is a correlation using scatter plots and heat maps. Variables used - Unit Price and Quantity.
 
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+The High- level steps take as per below;
+* Choosing a Dataset to analyse from Kaggle. 
+Creating a business requirement and three hypotheses.
+Cleaning the data by checking for duplicates, missing values and outliers.
+Data Visualisations using Matplotlib, seaborn, plotly.
+Analysing the data by validating hypotheses.
+Conclusion to report the findings.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+* Analyse online retail transaction data to uncover sales patterns and trends - Using libraries such as Seaborn and Matplotlib to show sales patterns and trends in the form of graphs and plots. 
+-Identify popular products and to understand customer behaviour to support targeted marketing and sales strategies - Using data visualisation to show customers purchasing from different locations and identifying lower price products sell more to get better understanding of customer behaviours.
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Descriptive Statistics: Displayed total transaction values and calculated mean. 
+Trend analysis - Using Time Series to analyse sales over time.
+Data Visualisation such as plots, graphs and charts to show correlation between variables.
+The structure of the data analysis is as follows;
+Loading the raw data from a CSV file.
+Looking at the data by using DataFrame methods.
+Checking for duplicates, missing values and outliers in data.
+Validating hypotheses by using libraries such as Matplotlib, Seaborn, plotly.
+Concluding the data to report findings. 
+Generative AI helped me with the code.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
-
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* I did not have any issues with data privacy, bias or fairness whilst analysisng the data.
+* I had no legal or societal issues.
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* I did use AI for issues that some were later fixed and some were left in the code. There was definetly gaps in my knowledge and I did refer back to the LMS handbook and AI to address these.
+The error issue I faced were the following;
+Importing libraries error 'No module named numpy'. I had to change the Python environment to Python venv.
+Another error I had was whilst trying to load the raw data. I later found out that I had downloaded and Excel file instead of CSV. To fix this, I had to install openpyxl on the terminal, load the Excel file and then save to CSV so I have both files in my RawData folder. 
+I also had an issue with Git Commit. I asked AI to help and then fixed the issue by asking help from Vasi.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
-
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
+* I faced a few challenges with getting my code to work, downloading the raw data, commiting on Github. I also ran out of time as I had wi-fi issues during this project. There was definetly gaps in my knowledge.
+I would like to better prepared, better organised and refresh my knowledge for future.
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+OS
+Numpy
+Pandas
+Matplotlib
+Seaborn
+Plotly
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
+* I used the raw dataset from https://www.kaggle.com/datasets/abhishekrp1517/online-retail-transactions-dataset
+I used W3 Schools alongside the LMS to refresh my pandas and and other libraries knowledge. 
+I used Chatgpt to help with some issues with loading, cleaning my data and github commiting.
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+I would like to thank Vasi for his help in this project.
