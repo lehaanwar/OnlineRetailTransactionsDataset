@@ -66,10 +66,11 @@ The error issue I faced were the following;
 Importing libraries error 'No module named numpy'. I had to change the Python environment to Python venv.
 Another error I had was whilst trying to load the raw data. I later found out that I had downloaded and Excel file instead of CSV. To fix this, I had to install openpyxl on the terminal, load the Excel file and then save to CSV so I have both files in my RawData folder. 
 I also had an issue with Git Commit. I asked AI to help and then fixed the issue by asking help from Vasi.
+The first hypothesis could be clearer, the reasons for higher sales in different countries could be due to many reasons.
 
 ## Development Roadmap
 * I faced a few challenges with getting my code to work, downloading the raw data, commiting on Github. I also ran out of time as I had wi-fi issues during this project. There was definetly gaps in my knowledge.
-I would like to better prepared, better organised and refresh my knowledge for future.
+I would like to better prepared, better organised and refresh my knowledge for future. I also had a few hypotheses I could have chosen that could have been more concise.
 
 ## Main Data Analysis Libraries
 OS
